@@ -169,4 +169,11 @@
 <div><span class='t'>[14:53:30] </span><span class='n'>akastargazer</span>: <span class='m'>даже голда в бочину, не пробьёт</span></div>
 <div><span class='t'>[14:54:02] </span><span class='n'>akastargazer</span>: <span class='m'>А первый выстрел всегда в землю. Уже даже не смешно.</span></div>
 <div><span class='t'>[14:58:34] </span><span class='n'>kpmy</span>: <span class='m'>хаха, наткнулся в go на косяк из двух факторов - переменные для скоупа и объявление по месту.</span></div>
+<div><span class='t'>[15:00:48] </span><span class='n'>kpmy</span>: <span class='m'>right, ret := first(ret)<br/>			assert.For(right != nil, 40)<br/>			if right, ok := bypass(right); !ok {<br/>				ret = trav(right, ret)<br/>			}<br/><br/>конечно же right в if создается локальная и внутри if меняется, но на внешнюю right это не влияет</span></div>
+<div><span class='t'>[15:01:18] </span><span class='n'>kpmy</span>: <span class='m'>хотя выше объявляется right </span></div>
+<div><span class='t'>[15:01:55] </span><span class='n'>kpmy</span>: <span class='m'>и по идее, если я напишу ниже вне if <br/>right, ok := ...<br/>то right останется прежней, не будет создана по месту</span></div>
+<div><span class='t'>[15:02:15] </span><span class='n'>kpmy</span>: <span class='m'>добавил фичу - получи кучу косяков</span></div>
+<div><span class='t'>[15:02:21] </span><span class='n'>kpmy</span>: <span class='m'>даже в гугле</span></div>
+<div><span class='t'>[15:02:35] </span><span class='n'>kpmy</span>: <span class='m'>категорический закон</span></div>
+<div><span class='t'>[15:08:54] </span><span class='n'>_valexey_</span>: <span class='m'>kpmy: := ведь создает переменные</span></div>
 </body></html>
