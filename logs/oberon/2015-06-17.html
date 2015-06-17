@@ -318,4 +318,9 @@
 <div><span class='t'>[21:01:05] </span><span class='n'>kpmý</span>: <span class='m'>пытаюсь поставить llvm биндинг для go, он там вытягивает код из репозитория, какие-то скрипты мутит и потом вылетает ошибка cc1.exe zlib1.dll не найден</span></div>
 <div><span class='t'>[21:02:14] </span><span class='n'>kpmý</span>: <span class='m'>похоже что-то связанное с gcc</span></div>
 <div><span class='t'>[21:08:19] </span><span class='n'>geniepro</span>: <span class='m'>сс -- это си компилер, а что за 1 хз</span></div>
+<div><span class='t'>[21:10:10] </span><span class='n'>geniepro</span>: <span class='m'>C:\...xec\gcc\x86_64-w64-mingw32\4.6.3>cc1.exe -version<br/>GNU C (rubenvb-4.6.3) version 4.6.3 (x86_64-w64-mingw32)<br/>        compiled by GNU C version 4.6.3, GMP version 5.0.4, MPFR version 3.1.0,<br/>MPC version 0.9<br/>GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072</span></div>
+<div><span class='t'>[21:10:23] </span><span class='n'>kpmý</span>: <span class='m'>даа</span></div>
+<div><span class='t'>[21:10:59] </span><span class='n'>geniepro</span>: <span class='m'>походу это фронтенд си</span></div>
+<div><span class='t'>[21:12:51] </span><span class='n'>kpmý</span>: <span class='m'>попробовал закинуть zlib1 из сборки гимпа в system32 вроде ошибка исчезла</span></div>
+<div><span class='t'>[21:36:11] </span><span class='n'>kpmý</span>: <span class='m'>что-то llvm в винде выдает крэш на простом примере</span></div>
 </body></html>
