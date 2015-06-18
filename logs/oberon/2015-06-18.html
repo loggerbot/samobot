@@ -161,4 +161,19 @@
 <div><span class='t'>[09:34:07] </span><span class='n'>geniepro</span>: <span class='m'>ну ок, а зачем?</span></div>
 <div><span class='t'>[09:34:16] </span><span class='n'>valexey</span>: <span class='m'>как понимаешь, на сигнатуру метода влияют только внешние имена</span></div>
 <div><span class='t'>[09:34:45] </span><span class='n'>valexey</span>: <span class='m'>при вызове метода ты явным образом сопоставляешь внешние имена актуальным параметрам</span></div>
+<div><span class='t'>[09:34:52] </span><span class='n'>geniepro</span>: <span class='m'>но внутреннее имя -- лишняя сущность чисто для удобства?</span></div>
+<div><span class='t'>[09:35:14] </span><span class='n'>valexey</span>: <span class='m'>она внутри реализации метода используется</span></div>
+<div><span class='t'>[09:35:31] </span><span class='n'>geniepro</span>: <span class='m'>а внешнее имя там внутри не может использоваться?</span></div>
+<div><span class='t'>[09:35:43] </span><span class='n'>valexey</span>: <span class='m'>[data decrypt:myCoolKey  withInitial:foo andPadding:myOptions];</span></div>
+<div><span class='t'>[09:35:50] </span><span class='n'>valexey</span>: <span class='m'>нет, не может.</span></div>
+<div><span class='t'>[09:36:03] </span><span class='n'>valexey</span>: <span class='m'>насколько я помню.</span></div>
+<div><span class='t'>[09:36:07] </span><span class='n'>geniepro</span>: <span class='m'>странный дизайн -- в смоллтоке разве такое было?</span></div>
+<div><span class='t'>[09:36:14] </span><span class='n'>valexey</span>: <span class='m'>вроде да.</span></div>
+<div><span class='t'>[09:36:39] </span><span class='n'>valexey</span>: <span class='m'>ну то есть понятно, что тут вызов метода это не вызов метода, а таки посылка сообщения</span></div>
+<div><span class='t'>[09:36:47] </span><span class='n'>valexey</span>: <span class='m'>и эти внешние имена - это имена полей в сообщении</span></div>
+<div><span class='t'>[09:37:08] </span><span class='n'>valexey</span>: <span class='m'>список пар: имя-значение</span></div>
+<div><span class='t'>[09:37:15] </span><span class='n'>geniepro</span>: <span class='m'>что-то типа АлгТД и паттернматчинга?</span></div>
+<div><span class='t'>[09:37:34] </span><span class='n'>valexey</span>: <span class='m'>да, это похоже</span></div>
+<div><span class='t'>[09:39:17] </span><span class='n'>geniepro</span>: <span class='m'>     | file config |<br/>     config := LookupTable new.<br/>     file := (File name: 'myapp.conf') readStream.<br/>     file linesDo: [:line |<br/>         (line =~ '(\w+)\s*=\s*((?: ?\w+)+)') ifMatched: [:match |<br/>             config at: (match at: 1) put: (match at: 2)]].<br/>     file close.<br/>     config printNl.</span></div>
+<div><span class='t'>[09:41:28] </span><span class='n'>valexey</span>: <span class='m'>это що такое?</span></div>
 </body></html>
