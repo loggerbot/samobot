@@ -176,4 +176,9 @@
 <div><span class='t'>[09:37:34] </span><span class='n'>valexey</span>: <span class='m'>да, это похоже</span></div>
 <div><span class='t'>[09:39:17] </span><span class='n'>geniepro</span>: <span class='m'>     | file config |<br/>     config := LookupTable new.<br/>     file := (File name: 'myapp.conf') readStream.<br/>     file linesDo: [:line |<br/>         (line =~ '(\w+)\s*=\s*((?: ?\w+)+)') ifMatched: [:match |<br/>             config at: (match at: 1) put: (match at: 2)]].<br/>     file close.<br/>     config printNl.</span></div>
 <div><span class='t'>[09:41:28] </span><span class='n'>valexey</span>: <span class='m'>это що такое?</span></div>
+<div><span class='t'>[09:42:11] </span><span class='n'>valexey</span>: <span class='m'>smalltalk</span></div>
+<div><span class='t'>[09:42:48] </span><span class='n'>valexey</span>: <span class='m'>ну да, то же самое: (File name: 'myapp.conf')</span></div>
+<div><span class='t'>[09:43:11] </span><span class='n'>valexey</span>: <span class='m'>в ObjC это было бы [File name:@"myapp.conf"];</span></div>
+<div><span class='t'>[09:45:35] </span><span class='n'>geniepro</span>: <span class='m'>Example with two keywords - CorporateBudget updateWith: $3000 on: 'Travel'<br/><br/>In this case, CorporateBudget is a variable identifying the receiverobject, and updateWith: on: is the selector. </span></div>
+<div><span class='t'>[09:47:36] </span><span class='n'>valexey</span>: <span class='m'>угу, в ObjC оно тоже селекторами зовется</span></div>
 </body></html>
