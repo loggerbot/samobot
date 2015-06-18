@@ -297,4 +297,33 @@
 <div><span class='t'>[10:54:10] </span><span class='n'>kpmy</span>: <span class='m'>с микрочипом валексей совсем перестанет быть похож на человека</span></div>
 <div><span class='t'>[10:54:56] </span><span class='n'>valexey</span>: <span class='m'>а зачем походить на человека? :-)</span></div>
 <div><span class='t'>[10:55:23] </span><span class='n'>valexey</span>: <span class='m'>akastargazer: проблема скорее всего в реализации юнити. а именно - в том месте где они пытаются использовать шарп как скриптовый язык</span></div>
+<div><span class='t'>[10:55:39] </span><span class='n'>kpmy</span>: <span class='m'>то есть не нубопроблемы? )</span></div>
+<div><span class='t'>[10:55:49] </span><span class='n'>valexey</span>: <span class='m'>ровно то же самое будет если этими же руками пытаться использовать в юнити любой другой язык в качестве скриптового</span></div>
+<div><span class='t'>[10:55:58] </span><span class='n'>akastargazer</span>: <span class='m'>не будет</span></div>
+<div><span class='t'>[10:55:59] </span><span class='n'>valexey</span>: <span class='m'>kpmy: нубопроблемы. только в данном случае нуб это не akastargazer :-)</span></div>
+<div><span class='t'>[10:56:08] </span><span class='n'>akastargazer</span>: <span class='m'>Они перегрузили операцию для типа</span></div>
+<div><span class='t'>[10:56:21] </span><span class='n'>akastargazer</span>: <span class='m'>Глубота проработки</span></div>
+<div><span class='t'>[10:56:39] </span><span class='n'>valexey</span>: <span class='m'>ты нашел это место?</span></div>
+<div><span class='t'>[10:56:39] </span><span class='n'>akastargazer</span>: <span class='m'>Ну, раз надо, так надо. Что делать, предметная область игростроя требует серьёзных подходов</span></div>
+<div><span class='t'>[10:56:53] </span><span class='n'>valexey</span>: <span class='m'>или это лишь предположение?</span></div>
+<div><span class='t'>[10:57:02] </span><span class='n'>valexey</span>: <span class='m'>то есть какой смысл в задании такой конвертации типа?</span></div>
+<div><span class='t'>[10:57:30] </span><span class='n'>akastargazer</span>: <span class='m'>>(13:56:40) valexey: ты нашел это место?<br/>мне исходников не дают, я делаю рабочую гипотезу. Может, женяпро сделает перегрузку операции типа и увидит, как оно, а мне лень</span></div>
+<div><span class='t'>[10:57:39] </span><span class='n'>valexey</span>: <span class='m'>кстати, если они задали такую конвертацию типа, то тебе не нужно писать if (a == null)</span></div>
+<div><span class='t'>[10:57:44] </span><span class='n'>valexey</span>: <span class='m'>тебе нужно писать просто if (a)</span></div>
+<div><span class='t'>[10:57:47] </span><span class='n'>valexey</span>: <span class='m'>и всё</span></div>
+<div><span class='t'>[10:57:48] </span><span class='n'>akastargazer</span>: <span class='m'>А для типа переопределено, да: http://docs.unity3d.com/ScriptReference/Object-operator_Object.html</span></div>
+<div><span class='t'>[10:58:09] </span><span class='n'>valexey</span>: <span class='m'>тогда точно ошибку не сделаешь :-)</span></div>
+<div><span class='t'>[10:58:13] </span><span class='n'>akastargazer</span>: <span class='m'>>(13:57:45) valexey: тебе нужно писать просто if (a)<br/>какое изящество</span></div>
+<div><span class='t'>[10:58:29] </span><span class='n'>valexey</span>: <span class='m'>ну, ты бы еще писал if (b==true) :-)</span></div>
+<div><span class='t'>[10:58:45] </span><span class='n'>akastargazer</span>: <span class='m'>вот ты смеёшься, а в туториалах повсеместно такое</span></div>
+<div><span class='t'>[10:58:59] </span><span class='n'>akastargazer</span>: <span class='m'>не в официальных, а где народ друг другу рассказывает, как делать</span></div>
+<div><span class='t'>[10:59:01] </span><span class='n'>valexey</span>: <span class='m'>if (b==true) ?</span></div>
+<div><span class='t'>[10:59:03] </span><span class='n'>akastargazer</span>: <span class='m'>да</span></div>
+<div><span class='t'>[10:59:06] </span><span class='n'>valexey</span>: <span class='m'>O_O</span></div>
+<div><span class='t'>[10:59:38] </span><span class='n'>valexey</span>: <span class='m'>http://www.youtube.com/watch?v=HcfHBgUTn7I</span></div>
+<div><span class='t'>[10:59:41] </span><span class='n'>valexey</span>: <span class='m'>вот</span></div>
+<div><span class='t'>[10:59:48] </span><span class='n'>akastargazer</span>: <span class='m'>>нужно писать просто if (a)<br/>всегда интересовало, почему скобки не квадратные.</span></div>
+<div><span class='t'>[11:00:15] </span><span class='n'>kpmy</span>: <span class='m'>фигурные!</span></div>
+<div><span class='t'>[11:00:17] </span><span class='n'>valexey</span>: <span class='m'>ну, изначально использовались много где именно квадратные</span></div>
+<div><span class='t'>[11:00:30] </span><span class='n'>akastargazer</span>: <span class='m'>Раз уж надо зачем-то писать скобки, так хоть геометрический узор должен быть</span></div>
 </body></html>
