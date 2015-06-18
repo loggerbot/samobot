@@ -154,4 +154,11 @@
 <div><span class='t'>[09:25:04] </span><span class='n'>geniepro</span>: <span class='m'>а в форте вообще нет никаких параметров у процедур</span></div>
 <div><span class='t'>[09:25:09] </span><span class='n'>geniepro</span>: <span class='m'>и имён у них тоже нет</span></div>
 <div><span class='t'>[09:29:38] </span><span class='n'>valexey</span>: <span class='m'>а в ObjC у методов есть внутренее имя аргумента и внешнее имя :-) что дюже удобно на самом деле.</span></div>
+<div><span class='t'>[09:30:22] </span><span class='n'>geniepro</span>: <span class='m'>valexey: о_О и как это выглядит и зачем это нужно?</span></div>
+<div><span class='t'>[09:33:35] </span><span class='n'>valexey</span>: <span class='m'>ну, например так: </span></div>
+<div><span class='t'>[09:33:40] </span><span class='n'>valexey</span>: <span class='m'>-(NSData*) decrypt:(NSString*) key<br/>       withInitial:(NSData*) iv<br/>        andPadding:(CCOptions) options;</span></div>
+<div><span class='t'>[09:33:56] </span><span class='n'>valexey</span>: <span class='m'>withInitial - внешнее, iv - внутренее</span></div>
+<div><span class='t'>[09:34:07] </span><span class='n'>geniepro</span>: <span class='m'>ну ок, а зачем?</span></div>
+<div><span class='t'>[09:34:16] </span><span class='n'>valexey</span>: <span class='m'>как понимаешь, на сигнатуру метода влияют только внешние имена</span></div>
+<div><span class='t'>[09:34:45] </span><span class='n'>valexey</span>: <span class='m'>при вызове метода ты явным образом сопоставляешь внешние имена актуальным параметрам</span></div>
 </body></html>
