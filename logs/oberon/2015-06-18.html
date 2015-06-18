@@ -139,4 +139,19 @@
 <div><span class='t'>[08:51:24] </span><span class='n'>akastargazer</span>: <span class='m'>так что для школоты, думаю, хардкор только полезен.</span></div>
 <div><span class='t'>[08:51:36] </span><span class='n'>akastargazer</span>: <span class='m'>Учи дитя пока поперёк лавки лежит</span></div>
 <div><span class='t'>[09:20:57] </span><span class='n'>kpmy</span>: <span class='m'>заметил, что во многих яп от сущностей с именем требуют соблюдения порядка объявления</span></div>
+<div><span class='t'>[09:21:22] </span><span class='n'>kpmy</span>: <span class='m'>например, параметры процедур</span></div>
+<div><span class='t'>[09:22:04] </span><span class='n'>valexey</span>: <span class='m'>у параметров функции исторически имен как раз нет</span></div>
+<div><span class='t'>[09:22:09] </span><span class='n'>kpmy</span>: <span class='m'>при вызове процедуры надо записывать выражения, которые передаются в параметры в строгом соответствии с их порядком</span></div>
+<div><span class='t'>[09:22:32] </span><span class='n'>kpmy</span>: <span class='m'>так то функции, а я про процедуры</span></div>
+<div><span class='t'>[09:22:48] </span><span class='n'>kpmy</span>: <span class='m'>отсюда же проблема с forward declaration</span></div>
+<div><span class='t'>[09:23:00] </span><span class='n'>kpmy</span>: <span class='m'>видимо тоже историческая </span></div>
+<div><span class='t'>[09:23:06] </span><span class='n'>kpmy</span>: <span class='m'>не было памяти на ast</span></div>
+<div><span class='t'>[09:23:16] </span><span class='n'>valexey</span>: <span class='m'>а процедуры от функций ничем не отличаются :-)</span></div>
+<div><span class='t'>[09:23:23] </span><span class='n'>valexey</span>: <span class='m'>то есть там тоже не было никаких имен</span></div>
+<div><span class='t'>[09:23:37] </span><span class='n'>kpmy</span>: <span class='m'>где там?</span></div>
+<div><span class='t'>[09:23:50] </span><span class='n'>valexey</span>: <span class='m'>имена формальных параметров - дело исключительно конкретной реализации данной процедуры</span></div>
+<div><span class='t'>[09:24:30] </span><span class='n'>valexey</span>: <span class='m'>алсо вообще порядок часто просто удобней - не нужно явным образом имена указывать.</span></div>
+<div><span class='t'>[09:25:04] </span><span class='n'>geniepro</span>: <span class='m'>а в форте вообще нет никаких параметров у процедур</span></div>
+<div><span class='t'>[09:25:09] </span><span class='n'>geniepro</span>: <span class='m'>и имён у них тоже нет</span></div>
+<div><span class='t'>[09:29:38] </span><span class='n'>valexey</span>: <span class='m'>а в ObjC у методов есть внутренее имя аргумента и внешнее имя :-) что дюже удобно на самом деле.</span></div>
 </body></html>
