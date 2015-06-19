@@ -43,4 +43,8 @@
 <div><span class='t'>[10:21:50] </span><span class='n'>geniepro</span>: <span class='m'>http://www.zelenograd.ru/news/9708/</span></div>
 <div><span class='t'>[10:42:55] </span><span class='n'>kpmy</span>: <span class='m'>тогда уж не процессор, а сразу SoC</span></div>
 <div><span class='t'>[10:51:32] </span><span class='n'>kpmy</span>: <span class='m'>наверное нужно что-то типа базового ядра с простым набором инструкций окруженного быстрыми FPGA модулями, чтобы этот набор расширять<br/>ну и таких ядер должно быть пару тысяч, чтобы гетерогенные вычисления, все дела</span></div>
+<div><span class='t'>[10:52:23] </span><span class='n'>kpmy</span>: <span class='m'>вирт в какой-то работе показывал, как организовать взаимодействие простых оберон ядер</span></div>
+<div><span class='t'>[10:52:28] </span><span class='n'>kpmy</span>: <span class='m'>тьфу</span></div>
+<div><span class='t'>[10:52:30] </span><span class='n'>kpmy</span>: <span class='m'>risc</span></div>
+<div><span class='t'>[12:19:42] </span><span class='n'>kpmy</span>: <span class='m'>писал тестовый пример, по ошибке написал == вместо = при сравнении.<br/><br/>добавил в парсер специальный случай <br/>case '=':<br/>			if s.next() == '=' {<br/>				s.Mark("shame on you")<br/>			} else {<br/>				sym.Code = Equal<br/>			}</span></div>
 </body></html>
