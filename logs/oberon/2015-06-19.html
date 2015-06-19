@@ -48,4 +48,15 @@
 <div><span class='t'>[10:52:30] </span><span class='n'>kpmy</span>: <span class='m'>risc</span></div>
 <div><span class='t'>[12:19:42] </span><span class='n'>kpmy</span>: <span class='m'>писал тестовый пример, по ошибке написал == вместо = при сравнении.<br/><br/>добавил в парсер специальный случай <br/>case '=':<br/>			if s.next() == '=' {<br/>				s.Mark("shame on you")<br/>			} else {<br/>				sym.Code = Equal<br/>			}</span></div>
 <div><span class='t'>[12:27:43] </span><span class='n'>akastargazer</span>: <span class='m'>правильный методический подход</span></div>
+<div><span class='t'>[12:28:29] </span><span class='n'>kpmy</span>: <span class='m'>профит знака := в том, что я в целом, могу поддерживать оба знака сравнения, не вызывая отвращения</span></div>
+<div><span class='t'>[12:28:37] </span><span class='n'>kpmy</span>: <span class='m'>у сторонников того или иного знака</span></div>
+<div><span class='t'>[12:29:27] </span><span class='n'>_valexey</span>: <span class='m'>а где-то бывает присваивание через : ?</span></div>
+<div><span class='t'>[12:29:45] </span><span class='n'>kpmy</span>: <span class='m'>бывает присваивание через =</span></div>
+<div><span class='t'>[12:31:04] </span><span class='n'>_valexey</span>: <span class='m'>этого не достаточно</span></div>
+<div><span class='t'>[12:31:15] </span><span class='n'>kpmy</span>: <span class='m'>кому, чего? </span></div>
+<div><span class='t'>[12:31:52] </span><span class='n'>_valexey</span>: <span class='m'>вообще, если уж делать кошерное присваивание, то делать его в такой форме: a+b+c -> d</span></div>
+<div><span class='t'>[12:32:07] </span><span class='n'>kpmy</span>: <span class='m'>да, да, как в рапире)</span></div>
+<div><span class='t'>[12:32:30] </span><span class='n'>kpmy</span>: <span class='m'>хз как это люди воспримут)</span></div>
+<div><span class='t'>[12:32:40] </span><span class='n'>kpmy</span>: <span class='m'>если уж от := такой срач</span></div>
+<div><span class='t'>[12:32:52] </span><span class='n'>_valexey</span>: <span class='m'>ну, с := у народа много ассоциаций :-)</span></div>
 </body></html>
