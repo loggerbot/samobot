@@ -352,4 +352,11 @@
 <div><span class='t'>[12:50:47] </span><span class='n'>valexey</span>: <span class='m'>после рефакторинга uint32_t убрали, а ( с ) осталось</span></div>
 <div><span class='t'>[12:50:48] </span><span class='n'>Kemet</span>: <span class='m'>даже Вирт так не пишет!</span></div>
 <div><span class='t'>[12:52:38] </span><span class='n'>valexey</span>: <span class='m'>#define U8_APPEND(s, i, length, c, isError) { \<br/>    if((uint32_t)(c)&lt;=0x7f) { \<br/>        (s)[(i)++]=(uint8_t)(c); \<br/>    } else { \<br/>        (i)=utf8_appendCharSafeBody(s, (int32_t)(i), (int32_t)(length), c, &amp;(isError)); \<br/>    } \<br/>}</span></div>
+<div><span class='t'>[12:52:41] </span><span class='n'>valexey</span>: <span class='m'>как пример</span></div>
+<div><span class='t'>[12:54:32] </span><span class='n'>geniepro</span>: <span class='m'>чоткий код же )))</span></div>
+<div><span class='t'>[12:54:50] </span><span class='n'>valexey</span>: <span class='m'>возможно чел привык писать тут макросы, и не стал руку сбивать когда начал писать функцию :-)</span></div>
+<div><span class='t'>[12:55:12] </span><span class='n'>valexey</span>: <span class='m'>или, что вероятней, у них просто в code style guide это жестко прописано</span></div>
+<div><span class='t'>[12:55:43] </span><span class='n'>Kemet</span>: <span class='m'>рядом другая процедура и там норм</span></div>
+<div><span class='t'>[12:57:20] </span><span class='n'>Kemet</span>: <span class='m'>вообще явно процедуры в одном файле написманы разными людьми, так в одной процедуре код в цикле, в другой цикл развёрнут руками.</span></div>
+<div><span class='t'>[12:57:39] </span><span class='n'>Kemet</span>: <span class='m'>одно и тоже делают по-сути</span></div>
 </body></html>
