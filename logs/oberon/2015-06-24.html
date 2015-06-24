@@ -339,4 +339,17 @@
 <div><span class='t'>[12:44:16] </span><span class='n'>Kemet</span>: <span class='m'>зачем столько скобок</span></div>
 <div><span class='t'>[12:45:00] </span><span class='n'>valexey</span>: <span class='m'>сложно сказать вне кода</span></div>
 <div><span class='t'>[12:46:24] </span><span class='n'>Kemet</span>: <span class='m'>U_CAPI int32_t U_EXPORT2<br/>utf8_appendCharSafeBody(uint8_t *s, int32_t i, int32_t length, UChar32 c, UBool *pIsError) {<br/>    if((uint32_t)(c)&lt;=0x7ff) {<br/>        if((i)+1&lt;(length)) {</span></div>
+<div><span class='t'>[12:47:20] </span><span class='n'>Kemet</span>: <span class='m'>Copyright (C) 1999-2012, International Business Machines</span></div>
+<div><span class='t'>[12:48:40] </span><span class='n'>valexey</span>: <span class='m'>такое бывает, когда раньше это было макросом например</span></div>
+<div><span class='t'>[12:48:48] </span><span class='n'>Kemet</span>: <span class='m'>ученики Вирта!</span></div>
+<div><span class='t'>[12:49:01] </span><span class='n'>valexey</span>: <span class='m'>и i и length были аргументами макроса</span></div>
+<div><span class='t'>[12:49:36] </span><span class='n'>Kemet</span>: <span class='m'>в обозримом прошлом небыло</span></div>
+<div><span class='t'>[12:49:56] </span><span class='n'>TRUE</span>: <span class='m'>а приоритет + и &lt; ?</span></div>
+<div><span class='t'>[12:50:22] </span><span class='n'>valexey</span>: <span class='m'>еще может быть раньше там было приведение типов</span></div>
+<div><span class='t'>[12:50:25] </span><span class='n'>valexey</span>: <span class='m'>аля (uint32_t)(c)</span></div>
+<div><span class='t'>[12:50:29] </span><span class='n'>valexey</span>: <span class='m'>(uint32_t)( c )</span></div>
+<div><span class='t'>[12:50:46] </span><span class='n'>TRUE</span>: <span class='m'>Этот код мог быть скопирован из другого места, где раньше вместо i и т.д. были макросы.</span></div>
+<div><span class='t'>[12:50:47] </span><span class='n'>valexey</span>: <span class='m'>после рефакторинга uint32_t убрали, а ( с ) осталось</span></div>
+<div><span class='t'>[12:50:48] </span><span class='n'>Kemet</span>: <span class='m'>даже Вирт так не пишет!</span></div>
+<div><span class='t'>[12:52:38] </span><span class='n'>valexey</span>: <span class='m'>#define U8_APPEND(s, i, length, c, isError) { \<br/>    if((uint32_t)(c)&lt;=0x7f) { \<br/>        (s)[(i)++]=(uint8_t)(c); \<br/>    } else { \<br/>        (i)=utf8_appendCharSafeBody(s, (int32_t)(i), (int32_t)(length), c, &amp;(isError)); \<br/>    } \<br/>}</span></div>
 </body></html>
