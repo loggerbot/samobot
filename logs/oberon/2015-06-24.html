@@ -93,4 +93,17 @@
 <div><span class='t'>[08:59:26] </span><span class='n'>geniepro</span>: <span class='m'>TRUE> Разве что только и объявляться и полностью использоваться она будет внутри.<br/>а как иначе? она же не может выйти за пределы того IF-блока, в котором была объявлена</span></div>
 <div><span class='t'>[08:59:27] </span><span class='n'>_valexey_</span>: <span class='m'>В том числе и под те, что в ифах будут.</span></div>
 <div><span class='t'>[09:00:31] </span><span class='n'>_valexey_</span>: <span class='m'>Но это я про C++, в виртуальных машинах все может быть иначе.</span></div>
+<div><span class='t'>[09:01:40] </span><span class='n'>_valexey_</span>: <span class='m'>Ну и вообще, опции у компилятора могут быть разные, например если мы стек экономим, то выделять под переменную память можно по тоебованию.</span></div>
+<div><span class='t'>[09:01:52] </span><span class='n'>TRUE</span>: <span class='m'>_valexey_> По факту, обычно, под все переменные функции память выделяется единым махом вначале.<br/><br/>Может, это и не повсеместно используемое решение, но оно мне больше нравится.<br/>Оптимизация может только касаться слежения за временем жизни отдельных переменных и переиспользования их участков памяти в стеке для других переменны после окончания использования этих участков предыдущими переменными.</span></div>
+<div><span class='t'>[09:02:16] </span><span class='n'>_valexey_</span>: <span class='m'>Впрочем, локальная переменная может быть и не на стеке вовсе :-)</span></div>
+<div><span class='t'>[09:02:33] </span><span class='n'>TRUE</span>: <span class='m'>ну, если уж совсем локальные</span></div>
+<div><span class='t'>[09:02:52] </span><span class='n'>geniepro</span>: <span class='m'>совсем локальные в регистрах! ))</span></div>
+<div><span class='t'>[09:02:55] </span><span class='n'>acidtech23</span>: <span class='m'>А в совке у людей не было квартир. Частной собственности не было.</span></div>
+<div><span class='t'>[09:03:24] </span><span class='n'>geniepro</span>: <span class='m'>acidtech23: вернись обратно в свою антивселенную уже ))) или просто проспись )</span></div>
+<div><span class='t'>[09:03:47] </span><span class='n'>_valexey_</span>: <span class='m'>acidtech23: кстати, а веди их меняли же как то. Это было не вполне законно? Вроде даже с доплатой.</span></div>
+<div><span class='t'>[09:03:49] </span><span class='n'>TRUE</span>: <span class='m'>>а как иначе? она же не может выйти за пределы того IF-блока, в котором была объявлена<br/>Объявлена она может быть за пределами блока. А вот выделение памяти - внутри блока.</span></div>
+<div><span class='t'>[09:04:52] </span><span class='n'>geniepro</span>: <span class='m'>TRUE: ну где объявлена, там же и выделена и проинициализирована</span></div>
+<div><span class='t'>[09:05:15] </span><span class='n'>_valexey_</span>: <span class='m'>geniepro:не обязательно же :-$</span></div>
+<div><span class='t'>[09:05:19] </span><span class='n'>_valexey_</span>: <span class='m'>:-)</span></div>
+<div><span class='t'>[09:05:45] </span><span class='n'>geniepro</span>: <span class='m'>— Доктор, у меня что–то анальный проход болит.<br/> — Снимайте штаны, показывайте… так… о, да у вас там роза торчит.<br/> — Доктор, это вам.</span></div>
 </body></html>
