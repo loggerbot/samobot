@@ -7,4 +7,20 @@
 <div><span class='t'>[07:11:56] </span><span class='n'>geniepro</span>: <span class='m'>ну наверное от оптимизаций компилятора зависит, но какой смысл заранее выделять, если переменная на стеке?</span></div>
 <div><span class='t'>[07:12:10] </span><span class='n'>geniepro</span>: <span class='m'>да и в куче</span></div>
 <div><span class='t'>[07:12:50] </span><span class='n'>akastargazer</span>: <span class='m'>так ведь уже известно, что будет выделение памяти, эффективнее сразу пачкой для всех выделить, а потом запускать вычисление</span></div>
+<div><span class='t'>[07:13:02] </span><span class='n'>geniepro</span>: <span class='m'>в виртовских языках в этом плане по идее более высокая нагрузка на стек, если компилятор простой и не умеет оптимизировать нагрузку на стек</span></div>
+<div><span class='t'>[07:13:31] </span><span class='n'>kpmy</span>: <span class='m'>а если объявление внутри if скоупа?</span></div>
+<div><span class='t'>[07:13:47] </span><span class='n'>geniepro</span>: <span class='m'>ну а в чём проблема-то?</span></div>
+<div><span class='t'>[07:14:08] </span><span class='n'>geniepro</span>: <span class='m'>https://github.com/nponeccop/haskell-exercises</span></div>
+<div><span class='t'>[07:14:38] </span><span class='n'>akastargazer</span>: <span class='m'>да нет проблемы. Я странным образом пытаюсь понять, как работает железо. Наверное, последствия оберонизации мозга. Не надо про это думать, микрософт уже обо всём позаботилась.</span></div>
+<div><span class='t'>[07:14:58] </span><span class='n'>geniepro</span>: <span class='m'>думать надо о задаче, а не о железе</span></div>
+<div><span class='t'>[07:15:28] </span><span class='n'>geniepro</span>: <span class='m'>а то получится у тебя преждевременная оптимизация, от которой только вред</span></div>
+<div><span class='t'>[07:15:31] </span><span class='n'>akastargazer</span>: <span class='m'>Да-да. Нахуя дохуя нахуячили, расхуячивайте обратно.</span></div>
+<div><span class='t'>[07:15:48] </span><span class='n'>akastargazer</span>: <span class='m'>Железо всегда ограничено, тебе это не приходило в голову?</span></div>
+<div><span class='t'>[07:16:11] </span><span class='n'>geniepro</span>: <span class='m'>ограничения железа -- проблемы железа</span></div>
+<div><span class='t'>[07:16:31] </span><span class='n'>akastargazer</span>: <span class='m'>Тут квантор всеобщности - всегда. Любое железо всегда ограничено.</span></div>
+<div><span class='t'>[07:16:55] </span><span class='n'>akastargazer</span>: <span class='m'>Отсюда вытекает вывод - можно легко поставить раком любое железо</span></div>
+<div><span class='t'>[07:17:04] </span><span class='n'>akastargazer</span>: <span class='m'>А это значит - надо про железо думать всегда</span></div>
+<div><span class='t'>[07:17:19] </span><span class='n'>geniepro</span>: <span class='m'>вот когда ты упрёшься в недостаток ресурсов и начнёшь профилировать программу, вот тогда и думай, где можно подправить 10% кода так, что бы уменьшить время работы программы на 90%</span></div>
+<div><span class='t'>[07:17:39] </span><span class='n'>akastargazer</span>: <span class='m'>хы-хы, зачастую приходится архитектуру переделывать, чтобы обойти ограничения )))</span></div>
+<div><span class='t'>[07:18:17] </span><span class='n'>geniepro</span>: <span class='m'>ну значит пока ты там думал о железе, ты сделал неправильную архитектуру -- я и говорю, не будь сам себе злобным буратиной</span></div>
 </body></html>
