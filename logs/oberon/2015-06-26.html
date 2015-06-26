@@ -125,4 +125,13 @@
 <div><span class='t'>[09:01:29] </span><span class='n'>valexey</span>: <span class='m'>ну, вообще говоря, нет. один модуль-один исходник не всегда удобно.</span></div>
 <div><span class='t'>[09:01:57] </span><span class='n'>akastargazer</span>: <span class='m'>Отдел с французскими винами в другом сарае, проходите</span></div>
 <div><span class='t'>[09:03:27] </span><span class='n'>akastargazer</span>: <span class='m'>У нас тут спутники падают, нам не до шампанского</span></div>
+<div><span class='t'>[09:04:12] </span><span class='n'>Kemet</span>: <span class='m'>строго говоря, даже в Обероне один программный модуль не обязан находится в одном файле, но так действительно проще. Модуль в Обероне семантически является объектом с одним экземпляром. Поэтому нет проблем, разместить их несколько в одном файле</span></div>
+<div><span class='t'>[09:04:57] </span><span class='n'>akastargazer</span>: <span class='m'>А результат компиляции всё равно разложится на несколько кодовых?</span></div>
+<div><span class='t'>[09:05:06] </span><span class='n'>valexey</span>: <span class='m'>а почему падают? потому, что ПО для них до сих пор пишут на допотопной модуле!</span></div>
+<div><span class='t'>[09:05:11] </span><span class='n'>Kemet</span>: <span class='m'>но вот объектники должны быть разделены</span></div>
+<div><span class='t'>[09:05:46] </span><span class='n'>Kemet</span>: <span class='m'>хотя, опять же, в АО проводились эксперименты по компиляции нескольких программных модулей в один объектный модуль</span></div>
+<div><span class='t'>[09:06:14] </span><span class='n'>Kemet</span>: <span class='m'>valexey: потому что внизу gcc!</span></div>
+<div><span class='t'>[09:06:33] </span><span class='n'>akastargazer</span>: <span class='m'>мне вот легче, когда я вижу, что сырец откомпилирован вот в этот загружаемый бинарник. Как будто кончиками пальцев ощущаешь систему. Физически.</span></div>
+<div><span class='t'>[09:06:53] </span><span class='n'>Kemet</span>: <span class='m'>ну так то да</span></div>
+<div><span class='t'>[09:08:32] </span><span class='n'>Kemet</span>: <span class='m'>с другой стороны концепция хранилища модулей в Оберонах не прописана, и должна быть гарантия загрузки модуля, а вот как он хранится это в общем-то дело десятое</span></div>
 </body></html>
