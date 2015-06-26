@@ -213,4 +213,19 @@
 <div><span class='t'>[11:04:24] </span><span class='n'>valexey</span>: <span class='m'>хороший принцип</span></div>
 <div><span class='t'>[11:05:21] </span><span class='n'>akastargazer</span>: <span class='m'>Бред же. Ведь в контракте уже зафиксировано, что по ссылке. Зачем второй раз?</span></div>
 <div><span class='t'>[11:09:13] </span><span class='n'>geniepro</span>: <span class='m'>akastargazer: ну так правильно же, это вам не оберон какой-то там</span></div>
+<div><span class='t'>[11:10:30] </span><span class='n'>geniepro</span>: <span class='m'>akastargazer: второй раз -- что бы при чтении кода яразу было видно, что какой-то параметр является выходным (out) или входным-выходным (ref)</span></div>
+<div><span class='t'>[11:11:27] </span><span class='n'>geniepro</span>: <span class='m'>в си тоже так было -- выходные параметры надо было передавать по адресу через &amp;, но не было проверки, и частая ошибка -- передача по значению</span></div>
+<div><span class='t'>[11:12:02] </span><span class='n'>valexey</span>: <span class='m'>да, в Си была слабая типизация</span></div>
+<div><span class='t'>[11:12:19] </span><span class='n'>valexey</span>: <span class='m'>Вот в С++ - строгая, но там увы, уже ссылки были, а не только указатели</span></div>
+<div><span class='t'>[11:12:39] </span><span class='n'>geniepro</span>: <span class='m'>да,, ссылки с++ ваще никак не обозначались при передаче</span></div>
+<div><span class='t'>[11:12:45] </span><span class='n'>geniepro</span>: <span class='m'>как в обероне прямо</span></div>
+<div><span class='t'>[11:12:52] </span><span class='n'>valexey</span>: <span class='m'>как и в Аде</span></div>
+<div><span class='t'>[11:12:58] </span><span class='n'>akastargazer</span>: <span class='m'>чего тут правильного? Размывается понятие контракта, уже непонятно, где контракт - при объявлении или при вызове.</span></div>
+<div><span class='t'>[11:13:01] </span><span class='n'>valexey</span>: <span class='m'>в C# в этом плане правильно сделано</span></div>
+<div><span class='t'>[11:13:19] </span><span class='n'>valexey</span>: <span class='m'>двойная проверка - это хорошо!</span></div>
+<div><span class='t'>[11:13:25] </span><span class='n'>valexey</span>: <span class='m'>и читать код такой проги легче</span></div>
+<div><span class='t'>[11:13:29] </span><span class='n'>akastargazer</span>: <span class='m'>Фигня, на самом деле. Зачем объявлять тогда ref, если всё равно при вызове надо ставить.</span></div>
+<div><span class='t'>[11:14:00] </span><span class='n'>valexey</span>: <span class='m'>иногда ты читаешь контракт, а иногда ты читаешь пользователя</span></div>
+<div><span class='t'>[11:14:10] </span><span class='n'>valexey</span>: <span class='m'>и там и там это должно быть указано</span></div>
+<div><span class='t'>[11:14:23] </span><span class='n'>valexey</span>: <span class='m'>чтобы не пришлось бегать по объявлениям и выяснять что там было закантрактировано</span></div>
 </body></html>
