@@ -60,4 +60,18 @@
 <div><span class='t'>[09:56:41] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>у них тут вообще всегда ровно 0 докладов :-D</span></div>
 <div><span class='t'>[10:08:27] </span><span class='n'>geniepro</span>: <span class='m'>std::generator&lt;int> fib() {<br/>    int a = 0, b = 1;<br/>    while (true) {<br/>        yield a;<br/>        int next = a + b;<br/>        a = b;<br/>        b = next;<br/>    }<br/>}<br/><br/>int main() {<br/>    for (v : fib()) {<br/>        if (v > 50)<br/>        break;<br/>        std::cout &lt;&lt; v &lt;&lt; std::endl;<br/>    }<br/>}<br/>чота питон с сишным синтаксисом</span></div>
 <div><span class='t'>[10:16:32] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>тут ничего новго не добавилось кроме yield</span></div>
+<div><span class='t'>[10:16:52] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>остальное все - это чистый С++ как он есть сейчас</span></div>
+<div><span class='t'>[10:16:53] </span><span class='n'>geniepro</span>: <span class='m'>ну вот благодаря ему это стало питоном )</span></div>
+<div><span class='t'>[10:17:02] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>дык и в шарпе то же самое</span></div>
+<div><span class='t'>[10:17:15] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>да и везде где есть сопрограммы, фигли? :-)</span></div>
+<div><span class='t'>[10:18:22] </span><span class='n'>geniepro</span>: <span class='m'>короче, ленивые вычисления проникают и в с++</span></div>
+<div><span class='t'>[10:18:30] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>угу</span></div>
+<div><span class='t'>[10:18:43] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>поэтому я и сказал — c++ так себе хаскель :-)</span></div>
+<div><span class='t'>[10:18:43] </span><span class='n'>geniepro</span>: <span class='m'>но как обычно -- в кривом варианте )</span></div>
+<div><span class='t'>[10:20:32] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>а вот еще пример функци-анальщины: https://rxcpp.codeplex.com</span></div>
+<div><span class='t'>[10:20:45] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>тут в примере кода явно видно, что очень хочется монады и do-синтаксис :-)</span></div>
+<div><span class='t'>[10:20:50] </span><span class='n'>geniepro</span>: <span class='m'>// C++ generic lambdas &amp; boost::range <br/>auto squares = boost::range::transformed(S, [](auto&amp;&amp; x) {  <br/>return x*x;  <br/>}); <br/>// С++ resumable functions<br/>auto squares = [&amp;] { for(auto&amp;&amp; x: S) yield x*x; };<br/>птичий йезыг</span></div>
+<div><span class='t'>[10:21:06] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>все понятно же!</span></div>
+<div><span class='t'>[10:21:25] </span><span class='n'>geniepro</span>: <span class='m'>[&amp;] -- это чо? о_О</span></div>
+<div><span class='t'>[10:21:38] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>захват всех локальный переменных по ссылке</span></div>
 </body></html>
