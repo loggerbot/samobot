@@ -460,4 +460,39 @@
 <div><span class='t'>[21:54:27] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>он там еще и другие литералы умеет :-)</span></div>
 <div><span class='t'>[21:54:47] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>в Project Oberon язык не Оберон из репорта, увыс</span></div>
 <div><span class='t'>[22:06:35] </span><span class='n'>ilovb</span>: <span class='m'>ну ну не гони лошадей</span></div>
+<div><span class='t'>[22:06:48] </span><span class='n'>ilovb</span>: <span class='m'>в прожекте чутку расширенный язык</span></div>
+<div><span class='t'>[22:06:52] </span><span class='n'>ilovb</span>: <span class='m'>но не другой</span></div>
+<div><span class='t'>[22:07:11] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>где-то расширенный, где-то имеет другую семантику. но общее множество довольно таки велико, да.</span></div>
+<div><span class='t'>[22:07:20] </span><span class='n'>ilovb</span>: <span class='m'>а расширен он надо понимать по причине миграции со старого репорта</span></div>
+<div><span class='t'>[22:07:30] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>не</span></div>
+<div><span class='t'>[22:07:40] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>кстати, там и типы другие, в PO2013 этом</span></div>
+<div><span class='t'>[22:07:43] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>не обероновские</span></div>
+<div><span class='t'>[22:07:48] </span><span class='n'>ilovb</span>: <span class='m'>например?</span></div>
+<div><span class='t'>[22:07:57] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>например там есть LONGINT</span></div>
+<div><span class='t'>[22:08:02] </span><span class='n'>ilovb</span>: <span class='m'>хе хе</span></div>
+<div><span class='t'>[22:08:12] </span><span class='n'>ilovb</span>: <span class='m'>так это и есть поддержка при миграции</span></div>
+<div><span class='t'>[22:08:14] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>заманался портировать тогда</span></div>
+<div><span class='t'>[22:08:36] </span><span class='n'>ilovb</span>: <span class='m'>LONGINT == INTEGER</span></div>
+<div><span class='t'>[22:08:44] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>не, там еще есть и литералами расширение, и семантика CASE другая и так далее и тому подобное.</span></div>
+<div><span class='t'>[22:08:50] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>а SHORTINT тогда что? :-)</span></div>
+<div><span class='t'>[22:08:54] </span><span class='n'>ilovb</span>: <span class='m'>он так сделал чтобы не париться со старыми исходниками</span></div>
+<div><span class='t'>[22:09:00] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>у Вирта же всегда был 32битный комп</span></div>
+<div><span class='t'>[22:09:07] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>что в 1988 году, что вот сейчас</span></div>
+<div><span class='t'>[22:09:21] </span><span class='n'>ilovb</span>: <span class='m'>шорт наверно тоже INTEGER</span></div>
+<div><span class='t'>[22:09:33] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ну, то есть возможно он таки сведет два языка в один, а может и нет :-)</span></div>
+<div><span class='t'>[22:09:39] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>Вирт он тут все может :-)</span></div>
+<div><span class='t'>[22:09:46] </span><span class='n'>ilovb</span>: <span class='m'>сведет не боись</span></div>
+<div><span class='t'>[22:10:02] </span><span class='n'>ilovb</span>: <span class='m'>все исходники разом перекроить физически очень сложно</span></div>
+<div><span class='t'>[22:10:06] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>эмм.. у меня нет такой уверенности :-)</span></div>
+<div><span class='t'>[22:10:13] </span><span class='n'>ilovb</span>: <span class='m'>тем более в обероновом редакторе</span></div>
+<div><span class='t'>[22:10:17] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ну он далеко не первый год их перекраивает же :-)</span></div>
+<div><span class='t'>[22:10:27] </span><span class='n'>ilovb</span>: <span class='m'>там же даже курсор с клавы не двигается</span></div>
+<div><span class='t'>[22:10:28] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>да, говноредактор тот еще</span></div>
+<div><span class='t'>[22:10:39] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>на каждую правку - за мышой тянуться</span></div>
+<div><span class='t'>[22:10:42] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>брр</span></div>
+<div><span class='t'>[22:10:46] </span>* alexey.veselovsky писал там</div>
+<div><span class='t'>[22:11:12] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>и сразу хочется все писать в одну строчку, и идентификаторы покороче :-)</span></div>
+<div><span class='t'>[22:11:22] </span><span class='n'>ilovb</span>: <span class='m'>кста, этот стиль виртовский с леплением статементов частично с этим связан наверно</span></div>
+<div><span class='t'>[22:11:33] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>хез</span></div>
+<div><span class='t'>[22:11:43] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>надо бы глянуть что там в оригинальном обероне с редактором было</span></div>
 </body></html>
