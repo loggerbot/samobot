@@ -228,4 +228,26 @@
 <div><span class='t'>[12:09:10] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>http://www.software.unn.ru/zonnon/</span></div>
 <div><span class='t'>[12:11:30] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>“Each function body consists of exactly one statement.”</span></div>
 <div><span class='t'>[12:15:25] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>а все остальное - выражения!</span></div>
+<div><span class='t'>[12:15:28] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>круто!</span></div>
+<div><span class='t'>[12:16:16] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>да, унутре webasm’a этого сидит вполне себе ЯП со строгой статической типизации.</span></div>
+<div><span class='t'>[12:16:21] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>типизацией</span></div>
+<div><span class='t'>[12:16:28] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>где все есть expression</span></div>
+<div><span class='t'>[12:16:32] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ну или около того</span></div>
+<div><span class='t'>[12:16:36] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>надо читать дальше</span></div>
+<div><span class='t'>[12:16:37] </span><span class='n'>kpmý</span>: <span class='m'>уже понятно, почему не llvm?</span></div>
+<div><span class='t'>[12:16:49] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>потому, что llvm уровнем ниже таки</span></div>
+<div><span class='t'>[12:17:13] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>то есть llvm это байткот, а тут будет интерпретация (или компиляция) AST</span></div>
+<div><span class='t'>[12:17:27] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>Why not a stack-, register- or SSA-based bytecode?<br/>•Trees allow a smaller binary encoding: JSZap &lt;https://research.microsoft.com/en-us/projects/jszap/>, Slim Binaries &lt;https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.108.1711>.<br/>•Polyfill prototype &lt;https://github.com/WebAssembly/polyfill-prototype-1> shows simple and efficient translation to asm.js.</span></div>
+<div><span class='t'>[12:17:51] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>подход совершенно другой</span></div>
+<div><span class='t'>[12:17:52] </span><span class='n'>kpmý</span>: <span class='m'>бгг</span></div>
+<div><span class='t'>[12:18:10] </span><span class='n'>kpmý</span>: <span class='m'>я говорю, почему не выбрали llvm для браузеров</span></div>
+<div><span class='t'>[12:18:27] </span><span class='n'>kpmý</span>: <span class='m'>ведь без разницы, что в песочнице запускать</span></div>
+<div><span class='t'>[12:18:36] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>дык описано же. llvm  - это регистровая хрень</span></div>
+<div><span class='t'>[12:18:46] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>и из llvm сейчас в asm.js замахаешься перетаскивать</span></div>
+<div><span class='t'>[12:18:54] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>или просто в js</span></div>
+<div><span class='t'>[12:19:04] </span><span class='n'>ilovb</span>: <span class='m'>захотел себе первый айфон посмотрев презенташку http://www.youtube.com/watch?v=yzh5ASF7LR4</span></div>
+<div><span class='t'>[12:19:06] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>llvm слишком низкоуровнево для их задач.</span></div>
+<div><span class='t'>[12:19:53] </span><span class='n'>ilovb</span>: <span class='m'>тьху не ту ссылку кинул https://www.youtube.com/watch?v=vN4U5FqrOdQ</span></div>
+<div><span class='t'>[12:20:24] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>по первой ссылке, насколько я вижу, таки Cedar :-)</span></div>
+<div><span class='t'>[12:20:34] </span><span class='n'>ilovb</span>: <span class='m'>угу</span></div>
 </body></html>
