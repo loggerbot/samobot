@@ -409,4 +409,14 @@
 <div><span class='t'>[21:13:48] </span><span class='n'>kpmý</span>: <span class='m'>проблема только в обмене данными с основной системой</span></div>
 <div><span class='t'>[21:14:33] </span><span class='n'>kpmý</span>: <span class='m'>и вот тут бы общий стандарт модульности помог бы</span></div>
 <div><span class='t'>[21:14:58] </span><span class='n'>kpmý</span>: <span class='m'>но такое надо долго выдумывать</span></div>
+<div><span class='t'>[21:15:45] </span><span class='n'>ilovb</span>: <span class='m'>знаешь я вот читаю LLVM и там типа модульность не приветствуется</span></div>
+<div><span class='t'>[21:15:56] </span><span class='n'>ilovb</span>: <span class='m'>ебаные сишники все со своей оптимизацией</span></div>
+<div><span class='t'>[21:16:45] </span><span class='n'>ilovb</span>: <span class='m'>динамическая линковка не позволяет хорошо оптимизить в целом</span></div>
+<div><span class='t'>[21:17:18] </span><span class='n'>ilovb</span>: <span class='m'>там (в LLVM) даже с раздельной компиляцией борются</span></div>
+<div><span class='t'>[21:17:28] </span><span class='n'>ilovb</span>: <span class='m'>ибо это проблема для оптимизатора</span></div>
+<div><span class='t'>[21:18:05] </span><span class='n'>ilovb</span>: <span class='m'>.ну а если оптимизация не нужна, то COM</span></div>
+<div><span class='t'>[21:18:36] </span><span class='n'>ilovb</span>: <span class='m'>вполне себе юзается везде и помирать не собирается</span></div>
+<div><span class='t'>[21:18:50] </span><span class='n'>ilovb</span>: <span class='m'>тем более теперь с WinRT</span></div>
+<div><span class='t'>[21:19:29] </span><span class='n'>ilovb</span>: <span class='m'>Хотя мне подход ББ больше нравится</span></div>
+<div><span class='t'>[21:20:45] </span><span class='n'>ilovb</span>: <span class='m'>В общем суть какая. Можно сделать охуенную модульную систему, но тебя не пустят с такой системой в серьезные высокопроизводительные вычисления</span></div>
 </body></html>
