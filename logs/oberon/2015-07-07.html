@@ -66,4 +66,30 @@
 <div><span class='t'>[08:55:02] </span><span class='n'>kpmy</span>: <span class='m'>программировать и на бумажке можно</span></div>
 <div><span class='t'>[08:58:23] </span><span class='n'>geniepro</span>: <span class='m'>а вот любопытно, риск-машина вирта имеет шансы пробиться на рынок мелкоконтроллеров, например?</span></div>
 <div><span class='t'>[08:58:41] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>нет, не имеет</span></div>
+<div><span class='t'>[08:58:50] </span><span class='n'>geniepro</span>: <span class='m'>правда, её придётся допиливать -- контроллер прерываний, таймеры, ацп-цап и прочее добавлять</span></div>
+<div><span class='t'>[08:58:58] </span><span class='n'>geniepro</span>: <span class='m'>alexey.veselovsky: о_О почему не имеет?</span></div>
+<div><span class='t'>[08:59:05] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>потому, что не эффективна</span></div>
+<div><span class='t'>[08:59:14] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>оно медленное и перегруженное</span></div>
+<div><span class='t'>[08:59:19] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>и без конвеера</span></div>
+<div><span class='t'>[08:59:27] </span><span class='n'>geniepro</span>: <span class='m'>то есть даже 51-й проц шустрее что ли?</span></div>
+<div><span class='t'>[08:59:37] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>угу, шустрее</span></div>
+<div><span class='t'>[08:59:41] </span><span class='n'>geniepro</span>: <span class='m'>а с арм ваще конкурировать не сможет?</span></div>
+<div><span class='t'>[08:59:42] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>современные 8051</span></div>
+<div><span class='t'>[08:59:48] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>угу</span></div>
+<div><span class='t'>[09:00:09] </span><span class='n'>geniepro</span>: <span class='m'>слышал бы вирт -- расплакался бы )))</span></div>
+<div><span class='t'>[09:00:25] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>то есть арм с примерно той же частотой БЕЗ FPU обгоняет виртовский комп на операциях на плавающей точке</span></div>
+<div><span class='t'>[09:00:34] </span><span class='n'>geniepro</span>: <span class='m'>а ты замеры делал?</span></div>
+<div><span class='t'>[09:00:44] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>+ виртовская машина требует срам</span></div>
+<div><span class='t'>[09:00:48] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>делал</span></div>
+<div><span class='t'>[09:01:02] </span><span class='n'>geniepro</span>: <span class='m'>а чо не расшарил???</span></div>
+<div><span class='t'>[09:01:21] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ну а чо лишний раз Вирта позорить? ;-)</span></div>
+<div><span class='t'>[09:02:30] </span><span class='n'>geniepro</span>: <span class='m'>тебя бы это не остановило, значит нет результатов у тебя убедительных )))</span></div>
+<div><span class='t'>[09:02:51] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>на самом деле, нужно же полноценный тест прогнать</span></div>
+<div><span class='t'>[09:03:03] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>я все думаю coremark портировать</span></div>
+<div><span class='t'>[09:03:10] </span><span class='n'>kpmy</span>: <span class='m'>по идее, надо иметь возможность написать модуль процессора прямо в IDE</span></div>
+<div><span class='t'>[09:03:17] </span><span class='n'>kpmy</span>: <span class='m'>конвеер например</span></div>
+<div><span class='t'>[09:03:21] </span><span class='n'>kpmy</span>: <span class='m'>или чо еще</span></div>
+<div><span class='t'>[09:03:30] </span><span class='n'>kpmy</span>: <span class='m'>SIMD</span></div>
+<div><span class='t'>[09:03:37] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ну, Оберон-комп Вирта в этом плане не автономен абсолютно</span></div>
+<div><span class='t'>[09:03:52] </span><span class='n'>alexey.veselovsky</span>: <span class='m'>ибо верилог и сторонние FPGA, без винды или линукса оно не работает</span></div>
 </body></html>
