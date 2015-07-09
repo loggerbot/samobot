@@ -151,4 +151,24 @@
 <div><span class='t'>[20:04:06] </span><span class='n'>ilovb</span>: <span class='m'>всегда видно что принимается и что возвращается</span></div>
 <div><span class='t'>[20:04:23] </span><span class='n'>ilovb</span>: <span class='m'>внутри процедуры параметры только для чтения</span></div>
 <div><span class='t'>[20:04:51] </span><span class='n'>vlad2</span>: <span class='m'>ilovb: и про это я тоже говорил - результат это результат, а не параметры</span></div>
+<div><span class='t'>[20:05:06] </span><span class='n'>ilovb</span>: <span class='m'>да, говорил</span></div>
+<div><span class='t'>[20:05:14] </span><span class='n'>ilovb</span>: <span class='m'>но суть моего спича в реализации!</span></div>
+<div><span class='t'>[20:05:23] </span><span class='n'>kpmý</span>: <span class='m'>это убого кстати, я в компиляторе два раза с таким столкнулся, там где можно было пустить список по стеку пришлось выдумывать функциональщину в виде разделения списка на первый элемент и хвост</span></div>
+<div><span class='t'>[20:05:25] </span><span class='n'>ilovb</span>: <span class='m'>эффективной :D</span></div>
+<div><span class='t'>[20:05:44] </span><span class='n'>kpmý</span>: <span class='m'>а все потому что в go нет вар-параметров</span></div>
+<div><span class='t'>[20:05:54] </span><span class='n'>ilovb</span>: <span class='m'>kpmý: так все на стеке и остается</span></div>
+<div><span class='t'>[20:06:23] </span><span class='n'>ilovb</span>: <span class='m'>еще раз r := proc( r ) компилится в proc(VAR r)</span></div>
+<div><span class='t'>[20:06:37] </span><span class='n'>acidtech23</span>: <span class='m'>какая же мразь мавроди</span></div>
+<div><span class='t'>[20:06:46] </span><span class='n'>kpmý</span>: <span class='m'>описательно это не выразить, ведь на входе один список, а на выходе он уже другой</span></div>
+<div><span class='t'>[20:06:56] </span><span class='n'>kpmý</span>: <span class='m'>да я понял, что компилируется</span></div>
+<div><span class='t'>[20:07:26] </span><span class='n'>kpmý</span>: <span class='m'>но ведь процедуры с результатом не нужны)</span></div>
+<div><span class='t'>[20:07:39] </span><span class='n'>kpmý</span>: <span class='m'>почему бы тогда просто не сменить нотацию</span></div>
+<div><span class='t'>[20:07:50] </span><span class='n'>ilovb</span>: <span class='m'>не понял</span></div>
+<div><span class='t'>[20:07:54] </span><span class='n'>ilovb</span>: <span class='m'>как сменить?</span></div>
+<div><span class='t'>[20:08:18] </span><span class='n'>kpmý</span>: <span class='m'>типа, когда хочешь передать значение - записываешь в скобках, а когда параметр - записываешь типа proc \p</span></div>
+<div><span class='t'>[20:08:35] </span><span class='n'>kpmý</span>: <span class='m'>и всем все ясно</span></div>
+<div><span class='t'>[20:09:06] </span><span class='n'>ilovb</span>: <span class='m'>имхо параметры по ссылке ничего не дают</span></div>
+<div><span class='t'>[20:09:12] </span><span class='n'>kpmý</span>: <span class='m'>но это конечно все костылики от нежелания просто принять неизбежное наличие VAR-параметров в самой концепции</span></div>
+<div><span class='t'>[20:09:26] </span><span class='n'>ilovb</span>: <span class='m'>зачем выдумывать для них синтаксис если они нинужны?</span></div>
+<div><span class='t'>[20:10:11] </span><span class='n'>kpmý</span>: <span class='m'>ну как же не нужны</span></div>
 </body></html>
