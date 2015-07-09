@@ -127,4 +127,28 @@
 <div><span class='t'>[19:59:30] </span><span class='n'>kpmý</span>: <span class='m'>VAR параметр!</span></div>
 <div><span class='t'>[19:59:34] </span><span class='n'>akastargazer</span>: <span class='m'>руки прочь от VAR</span></div>
 <div><span class='t'>[19:59:39] </span><span class='n'>kpmý</span>: <span class='m'>плюсую!</span></div>
+<div><span class='t'>[19:59:39] </span><span class='n'>akastargazer</span>: <span class='m'>не замай</span></div>
+<div><span class='t'>[19:59:49] </span><span class='n'>ilovb</span>: <span class='m'>та нинужны VAR</span></div>
+<div><span class='t'>[19:59:51] </span><span class='n'>kpmý</span>: <span class='m'>в моем язычке только VAR параметры</span></div>
+<div><span class='t'>[19:59:56] </span><span class='n'>ilovb</span>: <span class='m'>без них все то же самое</span></div>
+<div><span class='t'>[20:00:00] </span><span class='n'>kpmý</span>: <span class='m'>еще и именованые)</span></div>
+<div><span class='t'>[20:00:01] </span><span class='n'>vlad2</span>: <span class='m'>Шина замечательно работает и без VAR если разрешить тип тестить на не-VAR рекорде.</span></div>
+<div><span class='t'>[20:00:01] </span><span class='n'>ilovb</span>: <span class='m'>но читабельнее</span></div>
+<div><span class='t'>[20:00:23] </span><span class='n'>kpmý</span>: <span class='m'>это просто разные концепты</span></div>
+<div><span class='t'>[20:00:30] </span><span class='n'>Kemet</span>: <span class='m'>В АО таки рекорды возвращаются и массивы по значению, и оно правильно</span></div>
+<div><span class='t'>[20:00:57] </span><span class='n'>ilovb</span>: <span class='m'>да не надо ничего по значению возвращать</span></div>
+<div><span class='t'>[20:01:09] </span><span class='n'>acidtech23</span>: <span class='m'>а есть фамилия тому что в магазинах ничего не было?</span></div>
+<div><span class='t'>[20:01:17] </span><span class='n'>kpmý</span>: <span class='m'>переменная как регистр это то, о чем говорил дейкстра<br/>а переменная как значение это что-то из функциональщины</span></div>
+<div><span class='t'>[20:01:30] </span><span class='n'>ilovb</span>: <span class='m'>достаточно чтобы процедура принимала рекорд и возвращала тоже рекорд</span></div>
+<div><span class='t'>[20:01:44] </span><span class='n'>ilovb</span>: <span class='m'>можно сделать так чтобы компилятор понимал что это один и тот же рекорд</span></div>
+<div><span class='t'>[20:01:56] </span><span class='n'>kpmý</span>: <span class='m'>да в том и суть, что возвращают значение</span></div>
+<div><span class='t'>[20:01:58] </span><span class='n'>ilovb</span>: <span class='m'>и заменял сие внутри на VAR параметр</span></div>
+<div><span class='t'>[20:02:51] </span><span class='n'>ilovb</span>: <span class='m'>визуально это выглядит r = proc(r)</span></div>
+<div><span class='t'>[20:03:03] </span><span class='n'>ilovb</span>: <span class='m'>а компилируется proc(VAR r)</span></div>
+<div><span class='t'>[20:03:13] </span><span class='n'>kpmý</span>: <span class='m'>ну избыточно же</span></div>
+<div><span class='t'>[20:03:37] </span><span class='n'>ilovb</span>: <span class='m'>зато это полностью решает проблему с VAR IN OUT параметрами</span></div>
+<div><span class='t'>[20:03:42] </span><span class='n'>ilovb</span>: <span class='m'>они просто не нужны</span></div>
+<div><span class='t'>[20:04:06] </span><span class='n'>ilovb</span>: <span class='m'>всегда видно что принимается и что возвращается</span></div>
+<div><span class='t'>[20:04:23] </span><span class='n'>ilovb</span>: <span class='m'>внутри процедуры параметры только для чтения</span></div>
+<div><span class='t'>[20:04:51] </span><span class='n'>vlad2</span>: <span class='m'>ilovb: и про это я тоже говорил - результат это результат, а не параметры</span></div>
 </body></html>
