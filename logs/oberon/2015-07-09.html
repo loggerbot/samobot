@@ -99,4 +99,32 @@
 <div><span class='t'>[19:52:57] </span><span class='n'>akastargazer</span>: <span class='m'>В европке уже дана отмашка гнобить украинскую хунту, а донбасс уже в интернетах как российский прописан )</span></div>
 <div><span class='t'>[19:53:39] </span><span class='n'>akastargazer</span>: <span class='m'>А так всё это спекуляции, конечно. Да ещё у putnik1 какой-то очередной наркоманский инсайд пробегал</span></div>
 <div><span class='t'>[19:54:36] </span><span class='n'>ilovb</span>: <span class='m'>КАРОЧ! нужно выпиливать нахуй из языгов VAR параметры</span></div>
+<div><span class='t'>[19:54:43] </span><span class='n'>akastargazer</span>: <span class='m'>В целом, руину уже списали, вопрос только, будет ли Донбасс сам по себе болтаться. Российский паспорт всё ж приятнее</span></div>
+<div><span class='t'>[19:54:54] </span><span class='n'>vlad2</span>: <span class='m'>Путник в последнее время скорее терзается - вроде как и сливают, но верить не хочется.</span></div>
+<div><span class='t'>[19:54:59] </span><span class='n'>kpmý</span>: <span class='m'>ilovb: внезапно!</span></div>
+<div><span class='t'>[19:55:26] </span><span class='n'>ilovb</span>: <span class='m'>да я вот думал думал и не придумал зачем бы они вдруг были нужны</span></div>
+<div><span class='t'>[19:55:34] </span><span class='n'>akastargazer</span>: <span class='m'>ой, путник очень и очень этакий</span></div>
+<div><span class='t'>[19:55:50] </span><span class='n'>akastargazer</span>: <span class='m'>мастер морочить голову</span></div>
+<div><span class='t'>[19:56:03] </span><span class='n'>ilovb</span>: <span class='m'>множественное присваивание может заменить VAR параметры полностью</span></div>
+<div><span class='t'>[19:56:50] </span><span class='n'>ilovb</span>: <span class='m'>т.е. параметры все по значению (кроме рекордов - они по ссылке, но IN)</span></div>
+<div><span class='t'>[19:56:54] </span><span class='n'>vlad2</span>: <span class='m'>А инсайды были больше про то, что самых буйных того, а большие дядьки между собой все перетрут. Донбас в таком варианте остается с украиной.</span></div>
+<div><span class='t'>[19:57:18] </span><span class='n'>ilovb</span>: <span class='m'>все выходные значения возвращаем</span></div>
+<div><span class='t'>[19:57:48] </span><span class='n'>akastargazer</span>: <span class='m'>не, там что-то другое было. Я прочитал, и так хорошо оно легло в общую картину. Правда, никак не могу снова линку обнаружить (</span></div>
+<div><span class='t'>[19:57:50] </span><span class='n'>ilovb</span>: <span class='m'>Остается проблема с возвратом рекордов</span></div>
+<div><span class='t'>[19:57:58] </span><span class='n'>geniepro</span>: <span class='m'>ilovb: иногда бывает полезно для модификации тяжёлых структур-массивов, принимать как параметр и возвращать как результат не каждый компилятор сумеет соптимизировать</span></div>
+<div><span class='t'>[19:58:01] </span><span class='n'>ilovb</span>: <span class='m'>но она решается элементарно</span></div>
+<div><span class='t'>[19:58:04] </span><span class='n'>vlad2</span>: <span class='m'>ilovb: я давно про это говорил - VAR параметры ненужны. И в js хреново транслируются :)</span></div>
+<div><span class='t'>[19:58:06] </span><span class='n'>kpmý</span>: <span class='m'>ilovb: но что такое возврат, это просто размещение на стеке вызывающей процедуры значения переменной вызываемой, а это как раз VAR параметр</span></div>
+<div><span class='t'>[19:58:33] </span><span class='n'>ilovb</span>: <span class='m'>это да</span></div>
+<div><span class='t'>[19:58:41] </span><span class='n'>ilovb</span>: <span class='m'>но рекорды накладно возвращать</span></div>
+<div><span class='t'>[19:58:45] </span><span class='n'>kpmý</span>: <span class='m'>ну так и надо мыслить</span></div>
+<div><span class='t'>[19:58:53] </span><span class='n'>ilovb</span>: <span class='m'>а я знаю как сделать эффективно</span></div>
+<div><span class='t'>[19:58:54] </span><span class='n'>kpmý</span>: <span class='m'>ну их и не надо возвращать</span></div>
+<div><span class='t'>[19:58:55] </span><span class='n'>akastargazer</span>: <span class='m'>да вы чего, VAR это шампур для шины сообщений</span></div>
+<div><span class='t'>[19:59:12] </span><span class='n'>akastargazer</span>: <span class='m'>извращенцы</span></div>
+<div><span class='t'>[19:59:14] </span><span class='n'>ilovb</span>: <span class='m'>kpmý: а если тебе поле в рекорде изменить надо?</span></div>
+<div><span class='t'>[19:59:22] </span><span class='n'>ilovb</span>: <span class='m'>в отдельной процедуре</span></div>
+<div><span class='t'>[19:59:30] </span><span class='n'>kpmý</span>: <span class='m'>VAR параметр!</span></div>
+<div><span class='t'>[19:59:34] </span><span class='n'>akastargazer</span>: <span class='m'>руки прочь от VAR</span></div>
+<div><span class='t'>[19:59:39] </span><span class='n'>kpmý</span>: <span class='m'>плюсую!</span></div>
 </body></html>
