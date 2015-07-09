@@ -206,4 +206,21 @@
 <div><span class='t'>[20:24:55] </span><span class='n'>ilovb</span>: <span class='m'>и я его понимаю</span></div>
 <div><span class='t'>[20:25:09] </span><span class='n'>ilovb</span>: <span class='m'>но VAR засирается всякими временными переменными</span></div>
 <div><span class='t'>[20:25:33] </span><span class='n'>ilovb</span>: <span class='m'>которые очень далеко от места использования (причем очень локального)</span></div>
+<div><span class='t'>[20:25:53] </span><span class='n'>ilovb</span>: <span class='m'>делать много мелких процедур тоже не гут</span></div>
+<div><span class='t'>[20:26:01] </span><span class='n'>kpmý</span>: <span class='m'>ну это все равно что говорить, будто регистры процессора засираются временными значениями, это их задача</span></div>
+<div><span class='t'>[20:27:04] </span><span class='n'>ilovb</span>: <span class='m'>ну раз так, то зачем вообще VAR в процедурах?</span></div>
+<div><span class='t'>[20:27:15] </span><span class='n'>ilovb</span>: <span class='m'>объявил сразу все в модуле и все</span></div>
+<div><span class='t'>[20:27:35] </span><span class='n'>kpmý</span>: <span class='m'>модуль статический, а процедуры появляются и исчезают</span></div>
+<div><span class='t'>[20:27:44] </span><span class='n'>valexey</span>: <span class='m'>вар вообще нинужен! не должно быть такого ключевого слова!</span></div>
+<div><span class='t'>[20:27:46] </span><span class='n'>valexey</span>: <span class='m'>!1111</span></div>
+<div><span class='t'>[20:28:09] </span><span class='n'>kpmý</span>: <span class='m'>ну то есть концепция структурного блока вот такая, это уже не изменить</span></div>
+<div><span class='t'>[20:28:27] </span><span class='n'>ilovb</span>: <span class='m'>в общем я долго поддерживл VAR считая, что нужно писать много мелких процедур</span></div>
+<div><span class='t'>[20:28:58] </span><span class='n'>kpmý</span>: <span class='m'>возможно, стоит ввести блоки как отдельную сущность, типа SCOPE Count</span></div>
+<div><span class='t'>[20:28:59] </span><span class='n'>ilovb</span>: <span class='m'>теперь я передумал. пусть будут процедуры такими как диктует алгоритм</span></div>
+<div><span class='t'>[20:29:33] </span><span class='n'>ilovb</span>: <span class='m'>kpmý: тык вот я и говорю что секции нужны</span></div>
+<div><span class='t'>[20:29:47] </span><span class='n'>kpmý</span>: <span class='m'>но у вирта уже есть именованый скоуп - это процедуры в процедуре</span></div>
+<div><span class='t'>[20:29:47] </span><span class='n'>ilovb</span>: <span class='m'>объявлять переменные только в началае секции</span></div>
+<div><span class='t'>[20:29:55] </span><span class='n'>ilovb</span>: <span class='m'>а секций сколько угодно</span></div>
+<div><span class='t'>[20:30:33] </span><span class='n'>ilovb</span>: <span class='m'>kpmý: они слишком громоздки синтаксически, и опять же все в начале процедуры</span></div>
+<div><span class='t'>[20:31:05] </span><span class='n'>kpmý</span>: <span class='m'>ну, вот, возможно скоупы это решение твоей проблемы</span></div>
 </body></html>
