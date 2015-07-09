@@ -240,4 +240,13 @@
 <div><span class='t'>[20:40:33] </span><span class='n'>kpmý</span>: <span class='m'>для блока</span></div>
 <div><span class='t'>[20:41:51] </span><span class='n'>kpmý</span>: <span class='m'>франкенштейн ведь это доктор, а его создание звали хз как</span></div>
 <div><span class='t'>[20:45:33] </span><span class='n'>ilovb</span>: <span class='m'>у меня SUB это будет замена вложенным процедурам</span></div>
+<div><span class='t'>[20:45:51] </span><span class='n'>ilovb</span>: <span class='m'>они будут определяться по месту</span></div>
+<div><span class='t'>[20:46:12] </span><span class='n'>ilovb</span>: <span class='m'>не будут иметь параметров, и будут иметь локальные переменные</span></div>
+<div><span class='t'>[20:46:30] </span><span class='n'>ilovb</span>: <span class='m'>причем все SUB уничтожаются в новой секции</span></div>
+<div><span class='t'>[20:46:45] </span><span class='n'>ilovb</span>: <span class='m'>секции идут одна за одной (типа несколько BEGIN)</span></div>
+<div><span class='t'>[20:46:53] </span><span class='n'>ilovb</span>: <span class='m'>и не могут быть вложенными</span></div>
+<div><span class='t'>[20:47:41] </span><span class='n'>ilovb</span>: <span class='m'>в каждой секции свои переменные и SUBы</span></div>
+<div><span class='t'>[20:48:02] </span><span class='n'>ilovb</span>: <span class='m'>переменные определяются только в начале секции, а SUB где угодно</span></div>
+<div><span class='t'>[20:48:23] </span><span class='n'>geniepro</span>: <span class='m'>acidtech23: Горбачёв же этому фамилия</span></div>
+<div><span class='t'>[20:50:52] </span><span class='n'>ilovb</span>: <span class='m'>типа так<br/>procedure BlaBla<br/><br/>begin<br/>    i, k, n: int = 0<br/>    e, s, h: int<br/>    res: int<br/><br/>    sub ReadDigit<br/>        i: int = 0<br/>        if n &lt; 16 then<br/>            d[n] = ord(ch) - 30H<br/>            n += 1<br/>        else<br/>            mark("too many digits")<br/>            n = 0<br/>        end;<br/>        Texts.Read(R, ch)<br/>    end<br/><br/>    ReadDigit<br/>    while isValidDigit(ch) do ReadDigit<br/>    <br/>begin  -- новая секиция<br/>    z: int = 0<br/><br/>    return res<br/>end BlaBla</span></div>
 </body></html>
