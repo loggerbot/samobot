@@ -6,4 +6,18 @@
 <div><span class='t'>[07:02:36] </span><span class='n'>geniepro</span>: <span class='m'>пока нет, но валексей как-то грозился, когда мы тут двух ботов во взаимную рекурсию запускали</span></div>
 <div><span class='t'>[07:59:09] </span><span class='n'>Kemet</span>: <span class='m'>совкоборцы! клеветы!!</span></div>
 <div><span class='t'>[09:51:45] </span><span class='n'>kpmy</span>: <span class='m'>декларативные языки это новый мир)</span></div>
+<div><span class='t'>[09:52:09] </span><span class='n'>geniepro</span>: <span class='m'>kpmy: ну не такой уж и новый -- SQL с 70-х годов известен</span></div>
+<div><span class='t'>[09:52:13] </span><span class='n'>kpmy</span>: <span class='m'>набросал тут каркас чтобы выполнялся такой пример https://github.com/kpmy/lomo/blob/master/loco/Simple.lomo</span></div>
+<div><span class='t'>[09:52:32] </span><span class='n'>kpmy</span>: <span class='m'>ну я имею ввиду не для пользования, а для написания)</span></div>
+<div><span class='t'>[09:52:57] </span><span class='n'>kpmy</span>: <span class='m'>теперь вот думаю, как правильнее, чтобы PROCESS крутился бесконечно или чтобы в режиме one shot отработал и умер</span></div>
+<div><span class='t'>[09:53:22] </span><span class='n'>geniepro</span>: <span class='m'>	a.x := w<br/>	w := 1<br/><br/>присваивание переменной w после использоания? о_О</span></div>
+<div><span class='t'>[09:53:40] </span><span class='n'>kpmy</span>: <span class='m'>ну да, это же декларативный язык, порядок не важен</span></div>
+<div><span class='t'>[09:53:54] </span><span class='n'>geniepro</span>: <span class='m'>нет, в декларативных языках вообще нет присваивания</span></div>
+<div><span class='t'>[09:54:06] </span><span class='n'>geniepro</span>: <span class='m'>	a.x = w<br/>	w = 1<br/>вот как надо!</span></div>
+<div><span class='t'>[09:54:26] </span><span class='n'>kpmy</span>: <span class='m'>это уже частности, ведь = коммутативно, а := нет</span></div>
+<div><span class='t'>[09:55:01] </span><span class='n'>kpmy</span>: <span class='m'>короче, я делаю наподобие лолы</span></div>
+<div><span class='t'>[09:55:08] </span><span class='n'>kpmy</span>: <span class='m'>там именно присваивание</span></div>
+<div><span class='t'>[09:55:16] </span><span class='n'>kpmy</span>: <span class='m'>вирт отдельно это указывает</span></div>
+<div><span class='t'>[09:55:47] </span><span class='n'>geniepro</span>: <span class='m'>в математике "x = 1" или "f(a,b)=a+b" нет же коммутативности<br/></span></div>
+<div><span class='t'>[09:57:11] </span><span class='n'>kpmy</span>: <span class='m'>это уже перегруженный оператор сравнения</span></div>
 </body></html>
